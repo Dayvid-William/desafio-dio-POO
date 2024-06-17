@@ -74,4 +74,12 @@ public class Dev {
     public int hashCode() {
         return Objects.hash(nome, conteudosInscritos, conteudosConcluidos);
     }
+
+    public void receberCertificado() {
+        if (conteudosInscritos.isEmpty()) {
+            System.out.println("Parabens você concluiu todas as atividades inscritas!");
+        } else {
+            System.out.println("Você não concluiu todas as atividades ainda!");
+        }
+    }
 }
